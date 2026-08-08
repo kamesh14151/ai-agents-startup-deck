@@ -2,7 +2,7 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 import { NextResponse } from "next/server";
 import { finishAgentTrace, type AgentTrace } from "@/lib/agent-trace";
 
-const DEFAULT_MODEL = "gemini-2.5-flash";
+const DEFAULT_MODEL = "gemini-3.1-flash-lite";
 
 export function getGeminiKey(): string | null {
   const apiKey = process.env.GEMINI_API_KEY;
